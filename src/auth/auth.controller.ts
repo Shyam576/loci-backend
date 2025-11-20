@@ -1,4 +1,4 @@
-import { Controller, Post } from '@nestjs/common';
+import { Controller, Get, Patch, Post } from '@nestjs/common';
 
 @Controller('auth')
 export class AuthController {
@@ -6,4 +6,12 @@ export class AuthController {
   createUser() {
     return 'This creates the user';
   }
+
+  @Patch()
+  updateUser() {
+    return 'This tomrrow again';
+  }
+
+  @Get()
+  getUser() { }
 }
