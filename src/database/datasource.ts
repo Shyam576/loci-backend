@@ -1,3 +1,4 @@
+// This file is used only for CLI migration commands, NOT by Nest itself
 import { DataSource } from 'typeorm';
 
 export const AppDataSource = new DataSource({
@@ -7,7 +8,6 @@ export const AppDataSource = new DataSource({
   username: process.env.DB_USER,
   password: process.env.DB_PASS,
   database: process.env.DB_NAME,
-
   entities: ['dist/**/*.entity.js'],
   migrations: ['dist/database/migrations/*.js'],
 
