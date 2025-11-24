@@ -13,5 +13,7 @@ export class AuthController {
   }
 
   @Get()
-  getUser() { }
+  getUser() {
+    return 'This is the data returned';
+  }
 }

@@ -7,4 +7,8 @@ export class AuthService {
   create(user: string) {
     this.users.push(user);
   }
+
+  getUser() {
+    return 'My name is Gabar';
+  }
 }
